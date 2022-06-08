@@ -1,0 +1,7 @@
+{
+  "name": "SIMCEM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
