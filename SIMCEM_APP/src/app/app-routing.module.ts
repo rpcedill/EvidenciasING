@@ -10,7 +10,15 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },  {
+    path: 'consulta-medico',
+    loadChildren: () => import('./pages/consulta-medico/consulta-medico.module').then( m => m.ConsultaMedicoPageModule)
+  },
+  {
+    path: 'examen-medico',
+    loadChildren: () => import('./pages/examen-medico/examen-medico.module').then( m => m.ExamenMedicoPageModule)
   }
+
 ];
 
 @NgModule({
