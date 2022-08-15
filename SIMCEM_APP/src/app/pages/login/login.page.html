@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon size="small" src="SIMCEM_APP/src/assets/icon/caduceo.svg"></ion-icon>
+    <ion-title>SIMCEM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container" style="background-color: rgba(140, 140, 140, 0.27);">
+    <form [formGroup]="loginForm" method="post" style="padding-top: 5%;">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email" style="border-color: #8C8C8C;"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input formControlName="pwd" style="border-color: #8C8C8C;" type="password"></ion-input>
+      </ion-item>
+      <br>
+      <div class="btn-div" style="text-align: center;">
+        <ion-button (click)="login()">Login</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>
