@@ -1,0 +1,54 @@
+<ion-label class="header">SIMCEM</ion-label>
+
+<ion-content>
+  <div class="container">
+    <ion-row class="title ion-no-padding ion-no-margin">
+      <ion-col size="12">
+        <ion-label>Emitir Nueva Orden</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row class="inputs">
+      <ion-col size="2">
+        <ion-label>Nombres:</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <ion-label>Apellidos:</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <ion-label>Cédula:</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <ion-label>Fecha:</ion-label>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input placeholder="DD/MM/YYYY"></ion-input>
+      </ion-col>
+      <ion-row class="types">
+        <!-- strt acordion-->
+        <ion-accordion-group *ngFor="let type of tipos" >
+          
+            <ion-accordion value="type.tipo">
+              <ion-item slot="header" color="light">
+                <ion-label>{{type.tipo}}</ion-label>
+              </ion-item>
+              <div *ngFor="let i of tipos[lista]" class="ion-padding" slot="content">{{i}}</div>
+            </ion-accordion>
+          
+        </ion-accordion-group>
+      </ion-row>
+      <div class="buttons">
+        <ion-button shape="round" color="danger">Cancelar</ion-button>
+        <ion-button shape="round" color="success">Crear Orden</ion-button>
+      </div>
+    </ion-row>
+  </div>
+</ion-content>

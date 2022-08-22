@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LaboratorioMedicoPage
+  },
+  {
+    path: 'nueva-orden',
+    loadChildren: () => import('./nueva-orden/nueva-orden.module').then( m => m.NuevaOrdenPageModule)
   }
 ];
 

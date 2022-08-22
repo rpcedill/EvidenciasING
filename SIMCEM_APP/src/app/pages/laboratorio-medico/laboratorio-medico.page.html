@@ -2,43 +2,40 @@
 
 
 <ion-content>
-  <div class="contenido">
-    <div class="contenedor">
-        <ion-row class="title ion-no-padding ion-no-margin">
-          <ion-col size="10">
-            <ion-label>Exámenes</ion-label>
-          </ion-col>
-          <ion-col size="1">
-            <a href=""></a>
-            <ion-icon name="add-circle-outline"></ion-icon>
-          </ion-col>
-          <ion-col size="1">
-            <ion-icon name="search-outline"></ion-icon>
-          </ion-col>
-        </ion-row>
-        
-      <ion-grid>
-        <ion-row class="exam-row ion-padding ion-margin" *ngFor="let exam of datos">
-          <ion-col size="2">
-            <ion-label>{{exam.id}}</ion-label>
-          </ion-col>
-          <ion-col size="3">
-            <ion-label>{{exam.nombre}}</ion-label>
-          </ion-col>
-          <ion-col size="2">
-            <ion-label>{{exam.fecha}}</ion-label>
-          </ion-col>
-          <ion-col size="3">
-            <ion-label>{{exam.orden}}</ion-label>
-          </ion-col>
-          <ion-col size="2">
-           <ion-icon src="../../../assets/icon/realizado.svg" *ngIf="exam.estado == 'realizado'"></ion-icon>
-           <ion-icon src="../../../assets/icon/sin_entregar.svg" *ngIf="exam.estado == 'sin_entregar'"></ion-icon>
-           <ion-icon src="../../../assets/icon/sin_realizar.svg" *ngIf="exam.estado == 'sin_realizar'"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
+  <div class="container">
+    <ion-row class="title ion-no-padding ion-no-margin">
+      <ion-col size="10">
+        <ion-label>Exámenes</ion-label>
+      </ion-col>
+      <ion-col size="1">
+        <ion-icon routerLink="nueva-orden" name="add-circle-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+      
+    <ion-grid>
+      <ion-row class="exam-row ion-margin ion-padding" *ngFor="let exam of datos">
+        <ion-col size="2">
+          <ion-label>{{exam.id}}</ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>{{exam.nombre}}</ion-label>
+        </ion-col>
+        <ion-col size="2">
+          <ion-label>{{exam.fecha}}</ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>{{exam.orden}}</ion-label>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon src="../../../assets/icon/realizado.svg" *ngIf="exam.estado == 'realizado'"></ion-icon>
+          <ion-icon src="../../../assets/icon/sin_entregar.svg" *ngIf="exam.estado == 'sin_entregar'"></ion-icon>
+          <ion-icon src="../../../assets/icon/sin_realizar.svg" *ngIf="exam.estado == 'sin_realizar'"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 
 </ion-content>

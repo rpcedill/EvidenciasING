@@ -1,0 +1,30 @@
+@import "../laboratorio-medico.page.scss";
+
+.inputs {
+    width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.inputs ion-col ion-label {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ion-input {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+ion-input .native-input.sc-ion-input-md {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.buttons {
+    justify-content: space-between;
+    width: 100%;
+}
