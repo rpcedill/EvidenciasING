@@ -4,6 +4,23 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+ion-grid {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.exam-row ion-col {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+ion-icon {
+    width:25px; 
+    height:25px;
+}
+
 .header{
     font-weight: 800;
     display:flex;
@@ -30,32 +47,20 @@ html { font-family: 'Inter', sans-serif; }
     
 }
 
-.titulo {
+.title {
     height: 10%;
     align-items: center;
     text-align: left;
-    color:white;
+    color:white !important;
     font-weight: 600;
     font-size: larger;
     width: 80%;
     margin-right:auto;
     margin-left:auto;
-    
 }
-.tabla{
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-}
-.columna{
-    color:black;
-    display:flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 
-}
-.fila{
+.exam-row {
+    color:black;
     background-color: white;
     border-radius: 10px;
     width: 80%;

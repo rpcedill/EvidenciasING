@@ -17,7 +17,7 @@ export class LaboratorioMedicoPage implements OnInit {
         nombre: 'Gabriela Lascano C.',
         fecha: '01/12/2021',
         orden: 'GL493012',
-        estado: 'entregado'
+        estado: 'realizado'
       },
       {
         id: 2,
@@ -31,7 +31,7 @@ export class LaboratorioMedicoPage implements OnInit {
         nombre: 'Peter Rosales O.',
         fecha: '03/01/2022',
         orden: 'PR347392',
-        estado: 'en_proceso'
+        estado: 'sin_realizar'
       },
     ]
   }
