@@ -1,6 +1,6 @@
 @import "../laboratorio-medico.page.scss";
 
-.inputs {
+.new-order {
     width: 90%;
     background-color: white;
     margin-left: auto;
@@ -9,22 +9,49 @@
     padding: 1em;
 }
 
-.inputs ion-col ion-label {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 ion-input {
     border: 1px solid gray;
     border-radius: 10px;
-}
-
-ion-input .native-input.sc-ion-input-md {
-    padding-top: 0.5em !important;
-    padding-bottom: 0.5em !important;
+    --padding-bottom: 0.2em;
+    --padding-top: 0.2em;
+    text-align: center;
 }
 
 .buttons {
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-evenly;
+}
+
+ion-checkbox {
+    --border-radius: 5px;
+}
+
+.types {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+ion-accordion.accordion-collapsing ion-item[slot="header"],
+ion-accordion.accordion-collapsed ion-item[slot="header"] {
+  --background: white;
+  --color: var(--ion-color-light-contrast);
+}
+
+ion-accordion.accordion-expanding ion-item[slot="header"],
+ion-accordion.accordion-expanded ion-item[slot="header"] {
+  --background: var(--ion-color-light);
+  --color: var(--ion-color-light-contrast);
+}
+
+ion-accordion ion-row[slot="content"] ion-col,
+ion-accordion ion-item[slot="header"] {
+    text-align: center;
+}
+
+ion-accordion ion-row[slot="content"] {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+ion-button {
+    text-transform: none;
 }
